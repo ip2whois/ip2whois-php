@@ -1,0 +1,30 @@
+{
+    "name": "ip2whois/ip2whois-php",
+    "type": "library",
+    "description": "IP2WHOIS PHP SDK to help user to check WHOIS information for a particular domain.",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "IP2WHOIS",
+            "homepage": "https://www.ip2whois.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "IP2WHOIS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IP2WHOIS\\Test\\": "tests/"
+        }
+    }
+}
