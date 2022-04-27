@@ -10,12 +10,6 @@ Usage Example
 ============
 ### Lookup Domain Information
 
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
-
 ```
 <?php
 require_once __DIR__.'/vendor/autoload.php';
@@ -25,20 +19,12 @@ $config = new \IP2WHOIS\Configuration('YOUR_API_KEY');
 $ip2whois = new \IP2WHOIS\Api($config);
 
 // Lookup domain information
-$ip2whois->lookup([
-	'domain'	=> 'example.com',
-]);
+$ip2whois->lookup('example.com');
 ```
 
 
 
 ### Convert Normal Text to Punycode
-
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
 
 ```
 <?php
@@ -49,20 +35,12 @@ $config = new \IP2WHOIS\Configuration('YOUR_API_KEY');
 $ip2whois = new \IP2WHOIS\Api($config);
 
 // Convert normal text to punycode
-$ip2whois->getPunycode([
-	'domain'	=> 'xn--tst-qla.de',
-]);
+$ip2whois->getPunycode('xn--tst-qla.de');
 ```
 
 
 
 ### Convert Punycode to Normal Text
-
-#### Object Properties
-
-| Property Name | Property Type | Description                                                  |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| domain        |    string     | Domain name. |
 
 ```
 <?php
@@ -73,9 +51,7 @@ $config = new \IP2WHOIS\Configuration('YOUR_API_KEY');
 $ip2whois = new \IP2WHOIS\Api($config);
 
 // Convert punycode to normal text
-$ip2whois->getNormalText([
-	'domain'	=> 'täst.de',
-]);
+$ip2whois->getNormalText('täst.de');
 ```
 
 

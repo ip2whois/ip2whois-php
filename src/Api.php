@@ -22,12 +22,12 @@ class Api
 	 *
 	 * @return object result in JSON object
 	 */
-	public function lookup($params = [])
+	public function lookup($domain)
 	{
 		$queries = [
 			'key'     => $this->ip2whoisApiKey,
 			'format'  => 'json',
-			'domain'  => (isset($params['domain'])) ? $params['domain'] : '',
+			'domain'  => (isset($domain)) ? $domain : '',
 		];
 
 		$http = new Http();
@@ -47,11 +47,11 @@ class Api
 	 *
 	 * @return object result in JSON object
 	 */
-	public function getPunycode($params = [])
+	public function getPunycode($domain)
 	{
-		$domain  = (isset($params['domain'])) ? $params['domain'] : '';
+		$result  = (isset($domain)) ? $domain : '';
 
-		return idn_to_utf8($domain);
+		return idn_to_utf8($result);
 	}
 
 	/**
@@ -61,11 +61,11 @@ class Api
 	 *
 	 * @return object result in JSON object
 	 */
-	public function getNormalText($params = [])
+	public function getNormalText($domain)
 	{
-		$domain  = (isset($params['domain'])) ? $params['domain'] : '';
+		$result  = (isset($domain)) ? $domain : '';
 
-		return idn_to_ascii($domain);
+		return idn_to_ascii($result);
 	}
 }
 
