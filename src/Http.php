@@ -6,7 +6,7 @@ namespace IP2WHOIS;
  * IP2WHOIS HTTP Client
  * Sends Http requests using curl.
  *
- * @copyright 2021 IP2WHOIS.com
+ * @copyright 2022 IP2WHOIS.com
  */
 class Http
 {

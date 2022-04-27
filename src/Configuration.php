@@ -5,11 +5,11 @@ namespace IP2WHOIS;
 /**
  * Configuration registry.
  *
- * @copyright 2021 IP2WHOIS.com
+ * @copyright 2022 IP2WHOIS.com
  */
 class Configuration
 {
-	const VERSION = '1.0.0';
+	const VERSION = '2.0.1';
 
 	public $apiKey = '';
 
