@@ -27,10 +27,10 @@ class ApiTest extends TestCase
 	public function testGetPunycode() {
 		$config = new \IP2WHOIS\Configuration($GLOBALS['testApiKey']);
 		$ip2whois = new \IP2WHOIS\Api($config);
-		$result = $ip2whois->getPunycode('xn--tst-qla.de');
+		$result = $ip2whois->getPunycode('täst.de');
 
 		$this->assertEquals(
-			'täst.de',
+			'xn--tst-qla.de',
 			$result,
 		);
 	}
@@ -38,10 +38,10 @@ class ApiTest extends TestCase
 	public function testGetNormalText() {
 		$config = new \IP2WHOIS\Configuration($GLOBALS['testApiKey']);
 		$ip2whois = new \IP2WHOIS\Api($config);
-		$result = $ip2whois->getNormalText('täst.de');
+		$result = $ip2whois->getNormalText('xn--tst-qla.de');
 
 		$this->assertEquals(
-			'xn--tst-qla.de',
+			'täst.de',
 			$result,
 		);
 	}

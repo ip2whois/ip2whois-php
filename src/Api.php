@@ -51,7 +51,7 @@ class Api
 	{
 		$result  = (isset($domain)) ? $domain : '';
 
-		return idn_to_utf8($result);
+		return idn_to_ascii($result);
 	}
 
 	/**
@@ -65,7 +65,7 @@ class Api
 	{
 		$result  = (isset($domain)) ? $domain : '';
 
-		return idn_to_ascii($result);
+		return idn_to_utf8($result);
 	}
 }
 

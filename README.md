@@ -35,7 +35,7 @@ $config = new \IP2WHOIS\Configuration('YOUR_API_KEY');
 $ip2whois = new \IP2WHOIS\Api($config);
 
 // Convert normal text to punycode
-$ip2whois->getPunycode('xn--tst-qla.de');
+$ip2whois->getPunycode('täst.de');
 ```
 
 
@@ -51,7 +51,7 @@ $config = new \IP2WHOIS\Configuration('YOUR_API_KEY');
 $ip2whois = new \IP2WHOIS\Api($config);
 
 // Convert punycode to normal text
-$ip2whois->getNormalText('täst.de');
+$ip2whois->getNormalText('xn--tst-qla.de');
 ```
 
 
