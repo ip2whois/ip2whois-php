@@ -8,7 +8,7 @@ This module requires API key to function. You may sign up for a free API key at 
 Usage Example
 ============
 ### Lookup Domain Information
-```
+```php
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -21,7 +21,7 @@ $ip2whois->lookup('example.com');
 ```
 
 ### Convert Normal Text to Punycode
-```
+```php
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -34,7 +34,7 @@ $ip2whois->getPunycode('täst.de');
 ```
 
 ### Convert Punycode to Normal Text
-```
+```php
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -105,7 +105,7 @@ Response Parameter
 |billing.email|string|Billing email address.|
 |name_servers|array|Name servers|
 
-```
+```json
 {
     "domain": "greendot.com",
     "domain_id": "600750_DOMAIN_COM-VRSN",
