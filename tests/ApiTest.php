@@ -45,4 +45,26 @@ class ApiTest extends TestCase
 			$result,
 		);
 	}
+
+	public function testGetDomainName() {
+		$config = new \IP2WHOIS\Configuration($GLOBALS['testApiKey']);
+		$ip2whois = new \IP2WHOIS\Api($config);
+		$result = $ip2whois->getDomainName('https://www.example.com/exe');
+
+		$this->assertEquals(
+			'example.com',
+			$result,
+		);
+	}
+
+	public function testGetDomainExtension() {
+		$config = new \IP2WHOIS\Configuration($GLOBALS['testApiKey']);
+		$ip2whois = new \IP2WHOIS\Api($config);
+		$result = $ip2whois->getDomainExtension('https://www.example.com/exe');
+
+		$this->assertEquals(
+			'.com',
+			$result,
+		);
+	}
 }

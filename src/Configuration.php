@@ -9,7 +9,7 @@ namespace IP2WHOIS;
  */
 class Configuration
 {
-	const VERSION = '2.1.0';
+	const VERSION = '2.2.0';
 
 	public $apiKey = '';
 
