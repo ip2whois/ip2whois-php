@@ -1,13 +1,13 @@
 {
-    "name": "ip2whois/ip2whois-php",
+    "name": "HakerbyCaspeR/HakerbyCaspeR-php",
     "type": "library",
     "description": "IP2WHOIS PHP SDK to help user to check WHOIS information for a particular domain.",
-    "license": "MIT",
+    "license": "MIT",w
     "version": "2.2.0",
     "authors": [
         {
-            "name": "IP2WHOIS",
-            "homepage": "https://www.ip2whois.com"
+            "name": "Haker by CaspeR PL",
+            "homepage": "https://www.HakerbyCaspeR.com"
         }
     ],
     "require": {
