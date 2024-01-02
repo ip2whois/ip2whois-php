@@ -5,7 +5,7 @@ namespace IP2WHOIS;
 /**
  * Configuration registry.
  *
- * @copyright 2022 IP2WHOIS.com
+ * @copyright 2024 IP2WHOIS.com
  */
 class Configuration
 {
