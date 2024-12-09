@@ -1,7 +1,7 @@
 {
     "name": "ip2whois/ip2whois-php",
     "type": "library",
-    "description": "IP2WHOIS PHP SDK to help user to check WHOIS information for a particular domain. Test from KW",
+    "description": "IP2WHOIS PHP SDK to help user to check WHOIS information for a particular domain. Test from KW BBB",
     "license": "MIT",
     "version": "2.2.0",
     "authors": [
